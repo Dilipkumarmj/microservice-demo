@@ -1,0 +1,92 @@
+2021-12-07 18:33:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on user-Inspiron-5570 with PID 73664 (/home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo/twitter-to-kafka-service/target/classes started by user in /home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo)
+2021-12-07 18:33:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-07 18:33:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.493 seconds (JVM running for 2.317)
+2021-12-07 18:33:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-12-07 18:33:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-07 18:33:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-12-07 18:33:54 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-07 18:33:54 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-07 18:33:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-12-07 18:33:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-12-07 18:33:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @gp_pulipaka: Deep Learning Optimization. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStats #TensorFlow #…
+2021-12-07 18:33:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Yup, it’s official my spring and summer will be booked
+2021-12-07 18:33:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Manbearded The the Germanic goddess of Spring might call out plagiarism..
+2021-12-07 18:33:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Khulood_Almani: ⚡️This umbrella encourages you to drink the water it collects from the air
+
+@gigadgets_ 
+
+#innovation #tech #AI #DataSc…
+2021-12-07 18:33:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Make the spring training countdown pass a little faster by stopping by our ABYB HOLIDAY EVENT on 12/18 from 1-3p at Vets field! ⚾️ https://t.co/My2TIPTe9T
+2021-12-07 18:33:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @nytimes: The death toll from a volcanic eruption last weekend on the Indonesian island of Java rose to 34, officials announced on Tuesd…
+2021-12-07 18:33:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @StephenAppiah: Despite the forecast, live like it’s spring.
+
+#StepApp https://t.co/XRdj1F93gr
+2021-12-07 18:33:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @JackConnie GM Bella 🌄, have a great day Connie and good java most important ☕☕☕
+2021-12-07 18:33:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TinZawW99602660: #WhatsHappeningInMyanmar
+2021-12-07 18:33:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @witnessmag: #Artists! There's still time to send us your photos, paintings, illustrations & design work for a paid opportunity to featu…
+2021-12-07 18:33:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Dominic2306: V unwise for No10 to lie about this but PM set the course of lying on covid in spring when he decided to start rewriting h…
+2021-12-07 18:34:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @voguemagazine: The "Macarena" makes a comeback alongside spring 2022's most exciting collections with the #VogueMacarena. Here, enjoy a…
+2021-12-07 18:34:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @gp_pulipaka: Deep Learning Optimization. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStats #TensorFlow #…
+2021-12-07 18:34:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @him_selff: @USEmbassyGhana 
+There are lots of Ghanaian students who have admission to US Universities  for spring 2022 under F1 Visa. T…
+2021-12-07 18:34:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PippaCrerar: Sources told me last week there were “many social gatherings” in Downing Street - even suggesting there were “always parti…
+2021-12-07 18:34:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Khulood_Almani: ⚡️This umbrella encourages you to drink the water it collects from the air
+
+@gigadgets_ 
+
+#innovation #tech #AI #DataSc…
+2021-12-07 18:34:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @KugiyaJ どんな例外を扱っているかを調べる必要がある？ことを除けば、OptionやFutureに変換できることなどを考えるとベターJavaかもしれません。
+
+まあ、これらの型が関数型知識必要じゃんって言われたら、そうです…って感じですが
+2021-12-07 18:34:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @lala71821: 𓊆 交換 𓊇 あんスタ イベコレ缶バッジ Spring
+
+譲┊︎i 夏目
+
+求┊︎c 宙> i 宙 > i 光
+
+✧初回ﾘﾄﾘﾝ必読
+
+検索からもお気軽にお願い致します✿ https://t.co/ZmQJXWrtDC
+2021-12-07 18:34:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @enhypeness: ENHYPEN and TXT will cover BTS songs again! I just hope that this time the songs won’t be PTD, Butter, or Dynamite, because…
+2021-12-07 18:34:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @lukexizzle: BTOB Minhyuk just casually singing Spring Snow in his latest hutalog 💙🌸💙 https://t.co/1wWE1sY6ti
+2021-12-07 18:34:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text C2C - (4) - Sr Datawarehouse Engineer - Snowflake certified (APIs, Kafka, Java, SQL, ETL) - Remote https://t.co/eQASBwFRJj 
+
+#DATAWAREHOUSEENGINEER #SNOWFLAKEDATAWAREHOUSE #DATAWAREHOUSE #SNOWFLAKE #API #KAFKA #JAVA #SQL #SSIS  #SPARK #DATAENGINEER
+2021-12-07 18:34:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Want to stay in your cosy home-office? 
+ 
+Rockstar Recruiting AG is hiring for the Backend Engineer (Machine Learning) role
+ 
+⚙️ Technologies: Backend, ElasticSearch, Java, MachineLearning, Python, Scala
+ 
+Take your chance: https://t.co/LPJqSP76Yy
+2021-12-07 18:34:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text up!
+
+jungwoo spring fanparty 2018 pc is still available! 
+
+t. wts lfb jungwoo pc photocard ph nct 127
+2021-12-07 18:34:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Congratulations to Ms Sabeeha Hastam on successfully defending her MPhil in English (Linguistics) thesis.
+
+Title: A Study of Gender Representation in English Language Teaching Textbooks: A Multimodal Perspective.
+
+Intake: Spring 2018
+Supervisor: Dr Muhammad Yousaf
+#NUML https://t.co/3ur2cVfRQo
+2021-12-07 18:34:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text interest check ph / ic
+
+jeno ridin, mark sfp*, mark hs jc clip card cc*
+
+php 1000 + pf
+
+- set only
+- on hand
+- * has minimal mark
+
+dm/reply to claim!
+
+🏷 nct dream reload riding hot sauce jewel case nct 2018 spring fan party https://t.co/0e9xWfiSsZ
+2021-12-07 18:34:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #Cambodia_RejectTerrorists 
+#WhatsHappeningInMyanmar 
+#Dec7Coup https://t.co/XIWrIEZGaJ
+2021-12-07 18:34:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text https://t.co/3g29po8uFN
+2021-12-07 18:34:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ksheldongh: Bars My niqqa!
+2021-12-07 18:34:09 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - CLosing twitter stream !

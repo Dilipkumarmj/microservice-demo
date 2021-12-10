@@ -1,0 +1,11 @@
+2021-11-26 20:10:10 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on user-Inspiron-5570 with PID 25849 (/home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo/twitter-to-kafka-service/target/classes started by user in /home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo)
+2021-11-26 20:10:10 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-11-26 20:10:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.492 seconds (JVM running for 2.291)
+2021-11-26 20:10:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-11-26 20:10:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-11-26 20:13:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on user-Inspiron-5570 with PID 25974 (/home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo/twitter-to-kafka-service/target/classes started by user in /home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo)
+2021-11-26 20:13:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-11-26 20:13:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.461 seconds (JVM running for 2.248)
+2021-11-26 20:13:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-11-26 20:13:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-11-26 20:13:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!

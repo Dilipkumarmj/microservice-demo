@@ -1,0 +1,140 @@
+2021-12-05 17:04:42 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.yaml.snakeyaml.constructor.DuplicateKeyException: while constructing a mapping
+ in 'reader', line 2, column 3:
+      twitter-keywords:
+      ^
+found duplicate key mock-min-tweet-length
+ in 'reader', line 11, column 3:
+      mock-min-tweet-length: 15
+      ^
+
+	at org.yaml.snakeyaml.constructor.SafeConstructor.processDuplicateKeys(SafeConstructor.java:105)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:76)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:189)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461)
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:119)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping2ndStep(BaseConstructor.java:480)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:190)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461)
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:119)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:174)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:139)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:107)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:128)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:86)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:121)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+2021-12-05 17:05:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on user-Inspiron-5570 with PID 72334 (/home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo/twitter-to-kafka-service/target/classes started by user in /home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo)
+2021-12-05 17:05:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-05 17:05:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.048 seconds (JVM running for 1.567)
+2021-12-05 17:05:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-12-05 17:05:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-05 17:05:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-12-05 17:05:17 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Start mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-05 17:05:17 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas congue pulvinar adipiscing Maecenas Spring elit massa massa
+2021-12-05 17:05:27 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas pulvinar sit ultricies lectus Lorem Elasticsearch amet malesuada Fusce adipiscing libero
+2021-12-05 17:05:37 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas purus Maecenas congue Fusce magna sit Microservices adipiscing congue adipiscing amet dolor elit
+2021-12-05 17:05:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.11 on user-Inspiron-5570 with PID 72425 (/home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo/twitter-to-kafka-service/target/classes started by user in /home/user/Dilip/Udemy/EventDrivenMicroservices/microservices-demo)
+2021-12-05 17:05:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-05 17:05:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.924 seconds (JVM running for 1.383)
+2021-12-05 17:05:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-12-05 17:05:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-05 17:05:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-12-05 17:05:58 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-05 17:05:58 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-05 17:06:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-12-05 17:06:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-12-05 17:06:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Duke_Esports: Maintenant que toutes les infos sont disponibles, rdv mardi sur mon stream pour la tierlist avant le spring
+2021-12-05 17:06:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 改1 
+
+1. overture 〜 Spring Spring Spring 〜
+2. 流れ星を撃ち落せ
+3. カラクリカルカレ
+4. 静謐甘美秋暮抒情
+5. 101回目のプロローグ
+6. ラブソングは突然に～What is the name of that mystery?～
+2021-12-05 17:06:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @b3rry_y: Burmese people in South Korea,led by Spring Revolutionary Daegu Monk, are rallying in cities of South Korea today to protest a…
+2021-12-05 17:06:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @geoff_p_wade: ‘What kind of language was ‘Chinese Malay’ in late-colonial Java?’ Indonesia and the Malay World 45/133: 294-314. by Tom…
+2021-12-05 17:06:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @lovingjuyeon: day 1: the day that i meet you is like spring to me. spring has arrived. 
+
+day 2: it feels like i just came home after 2…
+2021-12-05 17:06:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I graduate spring 23 but I really don’t think I can wait that long 🤦🏽‍♀️
+2021-12-05 17:06:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SALHACHIMI: "#ArabSpring should not be looked at in the context of 10 yrs. 70 years ago, the region was under colonisation. After indep…
+2021-12-05 17:06:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @tulips_holland: Red tulips with a white line along the petals for this Sunday. ❤️🌷
+#travel to the #tulipsinholland spring 2022 https://…
+2021-12-05 17:06:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Khulood_Almani: .
+Insightful #Statistics on #Samsung #Profits #Recover👇
+
+@StatistaCharts 
+
+Thank you @enricomolinari for the kind share…
+2021-12-05 17:06:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @nam_mono7: It's crazy to me how kpoppies keep questioning the validity of every soty daesang BTS wins. It's as if they havent learned f…
+2021-12-05 17:06:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @withhersky: จีงุนเป็นmc9เดือนแล้ว ตั้งแต่spring summer autumn จนตอนนี้winter สี่ฤดูเลย🌸🍃🍂❄️ เวลาผ่านไปเร็วมาก
+2021-12-05 17:06:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @lovingjuyeon: day 1: the day that i meet you is like spring to me. spring has arrived. 
+
+day 2: it feels like i just came home after 2…
+2021-12-05 17:06:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @shroom4all: 121.45grams of shrooms ready for packaging #developer #css #java #software
+#javascript
+#Python
+#DataScience
+#DEVCommunity
+#…
+2021-12-05 17:06:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @lovingjuyeon: day 1: the day that i meet you is like spring to me. spring has arrived. 
+
+day 2: it feels like i just came home after 2…
+2021-12-05 17:06:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @LEPCornwall_IoS: The £6.3m STEM and Health Skills Centre in Bodmin aims to transform the teaching of industry-relevant skills & is on c…
+2021-12-05 17:06:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rya_maru_6: 【交換】エーステ エームビ ランダムブロマイド ソロショット 複数ショット vol.1 SPRING & SUMMER
+
+譲) «ソロ» 真澄 シトロン 天馬 椋 松川 雄三
+«複数» 画像参考
+
+求) «ソロ» 咲也 «複数» 咲也 真澄
+
+・…
+2021-12-05 17:06:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @DrWendyRocks: My thoughts are with the folks in Indonesia dealing with this 🌋 
+
+And before you ask, no, volcanoes aren’t erupting more…
+2021-12-05 17:06:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ❗ランキング：15位❗(CPU)
+
+「増設CPUボード (12C/ E5-2670v3)  N8101-947」
+メーカ:NEC
+
+価格:¥527,398✨
+🔥売り切れ間近🔥(20:36)
+
+https://t.co/Rp2z6U4AZU
+2021-12-05 17:06:09 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - CLosing twitter stream !
