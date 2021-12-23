@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
-import org.springframework.data.elasticsearch.core.IndexedObjectInformation;
 import org.springframework.data.elasticsearch.core.mapping.IndexCoordinates;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.stereotype.Service;
@@ -39,13 +38,12 @@ public class TwitterElasticIndexClient implements ElasticIndexClient<TwitterInde
     @Override
     public List<String> save(List<TwitterIndexModel> documents) {
         List<IndexQuery> indexQueries = elasticIndexUtil.getIndexQueries(documents);
-        List<IndexedObjectInformation> documentIdsInfo = elasticsearchOperations.bulkIndex(
+        List<String> documentIdsInfo = elasticsearchOperations.bulkIndex(
                 indexQueries,
                 IndexCoordinates.of(elasticConfigData.getIndexName())
         );
-        List<String> documentIds = documentIdsInfo.stream().map(indexedObjectInformation -> indexedObjectInformation.getId()).collect(Collectors.toList());
         LOG.info("Documents indexed successfully with type: {} and ids: {}", TwitterIndexModel.class.getName(),
-                documentIds);
-        return documentIds;
+                documentIdsInfo);
+        return documentIdsInfo;
     }
 }
