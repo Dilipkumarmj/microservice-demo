@@ -16,7 +16,11 @@ elastic-query-web-client:
     max-in-memory-size: 10485760 # 10MB
     content-type: 'application/vnd.api.v1+json'
     accept-type: 'application/vnd.api.v1+json'
-    base-url: 'http://elastic-query-service/elastic-query-service/documents'
+    base-url: 'http://localhost:8181/elastic-query-service/documents'
+  query-by-text:
+    method: POST
+    uri: "/getDocumentByText"
+    accept: ${elastic-query-web-client.webclient.accept-type}
 
 user-config:
   username: test
